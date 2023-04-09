@@ -20,7 +20,6 @@ function Landing() {
   const [Selected, setSelected] = useState([]);
   const [selectedIndex, setSelectedIndex] = useState(0)
 
-
   useEffect(() => {
     axios.get('https://api.genshin.dev/characters/')
       .then(response => {
@@ -74,14 +73,13 @@ function Landing() {
               else{
                 character["nationImg"] = character.nationData;
               }
-              console.log(character);
+              //console.log(character);
 
               setCharacterCard(CharacterCard => [...CharacterCard, character]);
             })
         }
       })
   }, []);
-
 
   function selectedCharacter(character) {
     // console.log(character);
@@ -175,8 +173,6 @@ function Landing() {
 
         </div>
       )}
-
-
 
       <div className="content_left_bottom">
         <div className="all_characters">

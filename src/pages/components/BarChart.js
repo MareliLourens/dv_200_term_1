@@ -24,7 +24,7 @@ ChartJS.register(
     Legend
 );
 
-function BarChart({characters}) {
+function BarChart({ characters }) {
 
     const [CharacterCard, setCharacterCard] = useState([]);
     const [characterLabels, setCharacterLabels] = useState();
@@ -54,12 +54,12 @@ function BarChart({characters}) {
                                     if (character.rarity > 0) {
                                         pushedCharacterRarity.push({ x: character.name, y: character.rarity })
                                     }
-                                
+
                                     characterCards.push(character);
                                 }
                             }
 
-                            
+
                         })
                 } setCharacterCard(characterCards);
                 setCharacterLabels(pushedCharacterNames);

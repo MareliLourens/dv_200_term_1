@@ -48,36 +48,36 @@ function LineChart(weaponType) {
               // console.log(weaponType.weaponType);
               // console.log(response4.data.type);
               if (weaponType.weaponType == response4.data.type) {
-              // console.log(response4.data);
-              let weapon = response4.data
-              setWeaponCard(WeaponCard => [...WeaponCard, weapon]);
+                // console.log(response4.data);
+                let weapon = response4.data
+                setWeaponCard(WeaponCard => [...WeaponCard, weapon]);
 
-              //console.log(weapon.name);
-              pushedWeaponNames.push(weapon.name);
+                //console.log(weapon.name);
+                pushedWeaponNames.push(weapon.name);
 
-              // for line chart data must match this following structure [{x:1,y:1},{x:1,y:1},{x:1,y:1}]
-              if (weapon.baseAttack > 0) {
-                pushedWeaponStats.push({ x: weapon.name, y: weapon.baseAttack })
-              } else if (weapon.baseAttack > 0) {
-                pushedWeaponStats.push({ x: weapon.name, y: weapon.baseattack })
-              } else {
-                pushedWeaponStats.push({ x: weapon.name, y: weapon.BaseAttack })
+                // for line chart data must match this following structure [{x:1,y:1},{x:1,y:1},{x:1,y:1}]
+                if (weapon.baseAttack > 0) {
+                  pushedWeaponStats.push({ x: weapon.name, y: weapon.baseAttack })
+                } else if (weapon.baseAttack > 0) {
+                  pushedWeaponStats.push({ x: weapon.name, y: weapon.baseattack })
+                } else {
+                  pushedWeaponStats.push({ x: weapon.name, y: weapon.BaseAttack })
+                }
+
+                if (weapon.rarity > 0) {
+                  pushedWeaponRarity.push({ x: weapon.name, y: weapon.rarity })
+                } else {
+                  pushedWeaponRarity.push({ x: weapon.name, y: weapon.rarity })
+                }
+                // pushedWeaponStats.push({x:weapon.name, y:weapon.baseAttack}) //This is where the API falls short, some of the datapoints are written as baseattack, and others are baseAttack =============================
+
+
+
+                weaponCards.push(weapon);
               }
 
-              if (weapon.rarity > 0) {
-                pushedWeaponRarity.push({ x: weapon.name, y: weapon.rarity })
-              } else {
-                pushedWeaponRarity.push({ x: weapon.name, y: weapon.rarity })
-              }
-              // pushedWeaponStats.push({x:weapon.name, y:weapon.baseAttack}) //This is where the API falls short, some of the datapoints are written as baseattack, and others are baseAttack =============================
 
-
-
-              weaponCards.push(weapon);
-              }
-              
-            
-          })
+            })
         } setWeaponCard(weaponCards);
         setWeaponLabels(pushedWeaponNames);
         setWeaponStats(pushedWeaponStats);

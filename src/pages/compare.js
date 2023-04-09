@@ -1,3 +1,4 @@
+/* Imports */
 import { useState, useEffect } from 'react';
 import React from "react";
 import axios from "axios";
@@ -15,10 +16,8 @@ const Compare = () => {
 
 
     const [CharacterCard, setCharacterCard] = useState([]);
-
     const [Selected, setSelected] = useState([]);
     const [Selected2, setSelected2] = useState([]);
-
 
     useEffect(() => {
         axios.get('https://api.genshin.dev/characters/')
@@ -27,16 +26,10 @@ const Compare = () => {
                 for (let index = 0; index < response.data.length; index++) {
                     // console.log(response.data[index]);
                     axios.get('https://api.genshin.dev/characters/' + response.data[index])
-
                         .then(response2 => {
                             let character = response2.data
                             //console.log(character);
-
-
                             setCharacterCard(CharacterCard => [...CharacterCard, character]);
-
-
-
 
                             character["card"] = 'https://api.genshin.dev/characters/' + response.data[index] + '/card';
                             character["element"] = 'https://api.genshin.dev/elements/' + character.vision.toLowerCase() + '/icon';
@@ -45,41 +38,22 @@ const Compare = () => {
                             if (character.weapon.toLowerCase() == "polearm") {
                                 character["weaponImg"] = polearm;
                             }
-
                             if (character.weapon.toLowerCase() == "sword") {
                                 character["weaponImg"] = sword;
                             }
-
                             if (character.weapon.toLowerCase() == "bow") {
                                 character["weaponImg"] = bow;
                             }
-
                             if (character.weapon.toLowerCase() == "catalyst") {
                                 character["weaponImg"] = catalyst;
                             }
-
                             if (character.weapon.toLowerCase() == "claymore") {
                                 character["weaponImg"] = claymore;
-
                             }
-
                         })
-
-
-
                 }
-
-
             })
-
-
-
-
-
-
     }, []);
-
-
 
     return (
         <div className="content_container_c">
@@ -124,15 +98,12 @@ const Compare = () => {
                             <h3 className="stats">Birthday: {new Date(Selected.birthday).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}</h3>
                         </div>
 
-
                         {Selected && Selected.skillTalents && Selected.skillTalents[0] && Selected.skillTalents[0].upgrades.slice(0, 5).map((upgrade, index) => (
                             <React.Fragment key={index}>
                                 <h3 className="character_name_stats">{upgrade.name}</h3>
                                 <h3 className="character_name_stats">{upgrade.value}</h3>
                             </React.Fragment>
                         ))}
-
-
 
                         {Selected && Selected.skillTalents && Selected.skillTalents[0] && Selected.skillTalents[0].upgrades.slice(0, 5).length > 0 && (
                             <>
@@ -201,15 +172,12 @@ const Compare = () => {
                             <h3 className="stats">Birthday: {new Date(Selected2.birthday).toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}</h3>
                         </div>
 
-
                         {Selected2 && Selected2.skillTalents && Selected2.skillTalents[0] && Selected2.skillTalents[0].upgrades.slice(0, 5).map((upgrade, index) => (
                             <React.Fragment key={index}>
                                 <h3 className="character_name_stats">{upgrade.name}</h3>
                                 <h3 className="character_name_stats">{upgrade.value}</h3>
                             </React.Fragment>
                         ))}
-
-
 
                         {Selected2 && Selected2.skillTalents && Selected.skillTalents[0] && Selected.skillTalents[0].upgrades.slice(0, 5).length > 0 && (
                             <>
@@ -236,7 +204,6 @@ const Compare = () => {
                     </>
                 ) : null}
             </div>
-
         </div>
 
     );

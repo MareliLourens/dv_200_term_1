@@ -475,6 +475,8 @@ body {
   display: block;
 }
 
+/* Compare Styling */
+
 .dropdown_left {
   position: relative;
   display: inline-block;
@@ -511,7 +513,7 @@ body {
   left: 150px;
   right: 50px;
   overflow: hidden;
-  overflow-y: scroll; 
+  overflow-y: scroll;
 }
 
 .dropdown-content_left {
@@ -584,6 +586,7 @@ body {
   position: relative;
   width: 100%;
 }
+
 #pie_wrapper {
   display: inline-block;
   position: relative;

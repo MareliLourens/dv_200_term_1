@@ -1,3 +1,4 @@
+/* Imports */
 import { useState, useEffect } from 'react';
 import React from "react";
 import axios from "axios";
@@ -6,14 +7,8 @@ import sword from "../assets/sword.webp";
 import bow from "../assets/bow.webp";
 import catalyst from "../assets/catalyst.webp";
 import claymore from "../assets/claymore.webp";
-import sumeru from "../assets/sumeru.webp";
-import snezhnaya from "../assets/snezhnaya.webp";
-import outlander from "../assets/outlander.webp";
-import unknown from "../assets/unknown.webp";
 import traveler from "../assets/traveler.webp";
 import LineChart from './components/LineChart';
-
-
 import cinnabar_spindle from "../assets/cinnabar_spindle.webp";
 import haran_geppaku_futsu from "../assets/haran_geppaku_futsu.webp";
 import prototype_archaic from "../assets/prototype_archaic.webp";
@@ -33,10 +28,8 @@ function TimeLine() {
   const [CharacterCard, setCharacterCard] = useState([]);
   const [WeaponCard, setWeaponCard] = useState([]);
   const [Selected, setSelected] = useState([]);
-
   const [weaponLabels, setWeaponLabels] = useState();
   const [weaponStats, setWeaponStats] = useState();
-
 
   useEffect(() => {
     axios.get('https://api.genshin.dev/characters/')
@@ -48,7 +41,7 @@ function TimeLine() {
 
             .then(response2 => {
               let character = response2.data
-              
+
               //console.log(character.rarity);
               setCharacterCard(CharacterCard => [...CharacterCard, character]);
 
@@ -75,14 +68,10 @@ function TimeLine() {
 
               if (character.weapon.toLowerCase() == "claymore") {
                 character["weaponImg"] = claymore;
-
               }
-
-
             })
         }
       })
-
   }, []);
 
   useEffect(() => {
@@ -95,7 +84,6 @@ function TimeLine() {
 
         for (let index = 0; index < response3.data.length; index++) {
           axios.get('https://api.genshin.dev/weapons/' + response3.data[index])
-
             .then(response4 => {
               let weapon = response4.data
               setWeaponCard(WeaponCard => [...WeaponCard, weapon]);
@@ -107,9 +95,6 @@ function TimeLine() {
                 pushedWeaponStats.push({ x: weapon.name, y: weapon.baseattack })
               }
 
-              // pushedWeaponStats.push({x:weapon.name, y:weapon.baseAttack}) //This is where the API falls short, some of the datapoints are written as baseattack, and others are baseAttack =============================
-
-
               weapon["iconData"] = 'https://api.genshin.dev/weapons/' + response3.data[index] + '/icon';
               //console.log(weapon.icon); 
               if (weapon.type.toLowerCase() == "polearm") {
@@ -118,7 +103,6 @@ function TimeLine() {
 
               if (weapon.type.toLowerCase() == "sword") {
                 weapon["weaponsImg"] = sword;
-
               }
 
               if (weapon.type.toLowerCase() == "bow") {
@@ -131,7 +115,6 @@ function TimeLine() {
 
               if (weapon.type.toLowerCase() == "claymore") {
                 weapon["weaponsImg"] = claymore;
-
               }
 
               if (weapon.name == "Cinnabar Spindle") {
@@ -178,13 +161,10 @@ function TimeLine() {
               }
               weaponCards.push(weapon);
             })
-        } setWeaponCard(weaponCards);
+        }
+        setWeaponCard(weaponCards);
         setWeaponLabels(pushedWeaponNames);
         setWeaponStats(pushedWeaponStats)
-
-
-
-
       })
 
   }, []);
@@ -206,12 +186,8 @@ function TimeLine() {
               <h1 className="weapon_attack">{weapon.baseAttack}{weapon.BaseAttack}</h1>
             </div>
           ))}
-
         </div>
       </div>
-
-
-
 
       <div className='dropdown_box'>
         <select class="dropdown" onChange={(e) => {
@@ -227,8 +203,6 @@ function TimeLine() {
         </select>
 
         {Selected ? (
-
-
           <div className="character_t">
             <img className="character_element" src={Selected.element}></img>
             <h3 className="character_name">{Selected.name}</h3>
