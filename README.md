@@ -78,3 +78,9 @@ Reflecting on my work on this project, there are several areas where I feel ther
 Another area where I would like to expand and enhance the project is in making it more interactive and engaging for users. While the website is functional and provides a useful service, I believe that there is room to add more interactivity and animation to the site, in order to make it more visually appealing and engaging for users. This might involve developing new features and functionalities, such as interactive maps or dynamic data visualizations, or adding subtle animations and effects to various elements of the site.
 
 Finally, I would also like to explore the possibility of incorporating an official API from Hoyoverse, if and when one becomes available. This would allow me to expand the functionality of the site even further, providing users with access to a wider range of data and insights related to the Hoyoverse platform. By incorporating an official API, I would be able to further enhance the usefulness and relevance of the website, while also demonstrating my proficiency and versatility as a developer.
+
+## Final Outcome
+
+### Mockup Video
+
+### Demonstration Video
