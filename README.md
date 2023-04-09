@@ -42,9 +42,9 @@ During the ideation phase of the project, I decided to use the GenshinDev API, w
 
 ### Wireframes:
 
-![Home](./Homepage.png)
-![Compare](./Comparison.png)
-![Timeline](./Timeline.png)
+![Home](./Wireframes/Homepage.png)
+![Compare](./Wireframes/Comparison%20page.png)
+![Timeline](./Wireframes/Timeline%20page.png)
 
 ### Custom UI:
 
