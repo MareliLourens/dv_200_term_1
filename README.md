@@ -144,7 +144,7 @@ Overall, this project has been an incredibly fulfilling experience, and I am eag
 Mareli Lourens - [Find me on Github](https://github.com/MareliLourens)
 
 ## Contact
-Mareli Lourens - [Email](mailto:221119@virtualwindow.co.za)
+Mareli Lourens - [Email](mailto:marelilourens@gmail.com)
 <br>
 Project Link - https://github.com/MareliLourens/dv_200_term_1.git
 
