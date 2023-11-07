@@ -1,13 +1,50 @@
-# Mareli Lourens Interactive Development 200 Term 1
+## <p align="center" style="text-decoration: none !important;padding:0;margin:0;">Mareli Lourens <br> 221119 <br> Interactive Development 200 - Term 1</p>
+
+<p align="center">
+  <img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Icon_Paimon_Menu.png/revision/latest?cb=20210605102449" height="75" style="display: block; margin: 0 auto;">
+</p>
+
+## <p align="center" style="text-decoration: none !important;padding:0;margin:0;">Interactive Dashboard</p>
+
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Product mockup](#product-mockup)
+  * [Project description](#project-description)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [How to install](#how-to-install)
+* [Features and Functionality](#features-and-functionality)
+* [Concept Process](#concept-process)
+   * [Ideation](#ideation)
+   * [Wireframes](#wireframes)
+   * [Custon UI](#custom-ui)
+* [Development Process](#development-process)
+    * [Highlights](#highlights)
+    * [Challenges](#challenges)
+* [Future Implementation](#future-implementation)
+* [Final Outcome](#final-outcome)
+    * [Mockups](#mockups)
+    * [Video Demonstration](#video-demonstration)
+* [Conclusion](#conclusion)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
 ## About the project:
 
-This term as a data-driven developer, my mission was to harness the power of Big Data to create a web application that could analyze and visualize vast data sets in a meaningful way. I was excited to take on the challenge and explore the world of APIs.
-I knew that there is an incredible amount of information out there, but it could be overwhelming to make sense of it all. My goal was to create an intelligent algorithm that could sort through this data, finding patterns and connections that might not be immediately apparent to a human observer.
-To begin my project, I carefully selected the API that I would use. I ultimately chose to use a fan-based API created by GenshinDev that was based on the content of the game Genshin Impact, which was created by Hoyoverse.
-Once I had selected my API, I dived into the code and started building my web application. I wrote code that could handle large volumes of data efficiently, while also providing intuitive and user-friendly visualizations that made it easy for users to explore the data and discover new insights.
-<br><br>
-For this project, I utilized React and Node.js, as well as advanced Javascript and Chart.js.
+### Product mockup:
+![Mockup](./Wireframes/product_mockup.png)
+
+### Project description:
+As a data-driven developer, my mission was to harness the power of Big Data to create a web application that could analyze and visualize vast data sets in a meaningful way. I eagerly embraced the challenge and explored the world of APIs. Recognizing the overwhelming amount of available information, my goal was to develop an intelligent algorithm that could uncover hidden patterns and connections within the data.
+I carefully selected an API created by GenshinDev, based on the content of the game Genshin Impact by Hoyoverse. With the API in hand, I delved into coding, focusing on efficiently handling large data volumes and creating user-friendly visualizations for data exploration and insights.
+
+### Built with:
+This project is built with React and Node.js, as well as advanced Javascript and Chart.js.
 
 ## Getting Started:
 
@@ -101,3 +138,18 @@ Working on this project has allowed me to put into practice many of the concepts
 I am particularly proud of the progress I have made in developing my programming skills. As someone who was relatively new to coding at the start of this project, I am thrilled with the progress I have made and the many new tools and techniques I have learned along the way. I have also gained a greater appreciation for the importance of testing and debugging, and how these skills are critical to developing high-quality software.
 
 Overall, this project has been an incredibly fulfilling experience, and I am eager to continue working on it and implementing new features and improvements in the future. I believe that this project has not only helped me to develop my technical skills, but has also given me valuable experience working in a team environment and managing a project from start to finish. I am excited to take these skills and experiences with me as I move forward in my career, and I am confident that they will serve me well in whatever challenges lie ahead.
+
+
+## Authors
+Mareli Lourens - [Find me on Github](https://github.com/MareliLourens)
+
+## Contact
+Mareli Lourens - [Email](mailto:221119@virtualwindow.co.za)
+<br>
+Project Link - https://github.com/MareliLourens/dv_200_term_1.git
+
+## Acknowledgements
+<!-- all resources that you used and Acknowledgements here -->
+* [Genshin Impact](https://genshin.hoyoverse.com/en/) <!-- OW reference: HoYoverse, Shanghai Miha Touring Film Technology Co., Ltd. 2020. Genshin Impact. 4.1. GeForce Now, PlayStation 5, PlayStation 4, Android, Microsoft Windows, iOS.mainland China: HoYoverse, worldwide:Cognosphere Pte. Ltd. -->
+* [Genshin Impact Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki) <!-- OW reference: Fandom. 2023. Genshin Impact Wiki. https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki (Accessed 7 November 2023) -->
+* [Genshin Impact API](https://genshin.dev/) <!-- OW reference: Marvin "NurMarvin" Witt. 2020. Fan-Made Genshin Impact API. https://genshin.dev/ (Accessed 7 November 2023) -->
