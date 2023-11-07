@@ -28,7 +28,6 @@
     * [Mockups](#mockups)
     * [Video Demonstration](#video-demonstration)
 * [Conclusion](#conclusion)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
