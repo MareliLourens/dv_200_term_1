@@ -149,7 +149,6 @@ Mareli Lourens - [Email](mailto:marelilourens@gmail.com)
 Project Link - https://github.com/MareliLourens/dv_200_term_1.git
 
 ## Acknowledgements
-<!-- all resources that you used and Acknowledgements here -->
 * [Genshin Impact](https://genshin.hoyoverse.com/en/) <!-- OW reference: HoYoverse, Shanghai Miha Touring Film Technology Co., Ltd. 2020. Genshin Impact. 4.1. GeForce Now, PlayStation 5, PlayStation 4, Android, Microsoft Windows, iOS.mainland China: HoYoverse, worldwide:Cognosphere Pte. Ltd. -->
 * [Genshin Impact Wiki](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki) <!-- OW reference: Fandom. 2023. Genshin Impact Wiki. https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki (Accessed 7 November 2023) -->
 * [Genshin Impact API](https://genshin.dev/) <!-- OW reference: Marvin "NurMarvin" Witt. 2020. Fan-Made Genshin Impact API. https://genshin.dev/ (Accessed 7 November 2023) -->
