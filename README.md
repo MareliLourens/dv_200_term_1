@@ -25,7 +25,7 @@
     * [Challenges](#challenges)
 * [Future Implementation](#future-implementation)
 * [Final Outcome](#final-outcome)
-    * [Mockups](#mockup-video)
+    * [Mockup Video](#mockup-video)
     * [Video Demonstration](#demonstration-video)
 * [Conclusion](#conclusion)
 * [License](#license)
